@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3</title>
+</head>
+<body>
+    <h3>Call Stack</h3>
+    <p id="p1"></p>
+    <script>
+        function add(a,b){
+            return a+b;
+        }
+        function average(x,y){
+            var sum=add(x,y);
+            return sum/2;
+        }
+        let result=average(30,40);
+        document.getElementById("p1").innerHTML=result;
+    </script>
+</body>
+</html>
